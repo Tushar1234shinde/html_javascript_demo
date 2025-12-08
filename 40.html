@@ -1,0 +1,18 @@
+<html>
+<body>
+<button onclick="seed()">CLICK</button>
+<p id="hexa"></p>
+<script>
+var x=["CSE","IT","MECH","CIVIL","EXTC"];
+
+document.getElementById("hexa").innerHTML=x;
+
+function seed()
+{
+x.unshift("AI/DS");
+
+document.getElementById("hexa").innerHTML=x;
+}
+</script>
+</body>
+</html>

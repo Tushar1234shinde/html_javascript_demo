@@ -1,0 +1,23 @@
+<html>
+<body>
+<button onclick="seed()">CLICK</button>
+<p id="hexa"></p>
+<script>
+function seed()
+{
+var x=new Date().getHours();
+var y;
+
+if(x<12)
+{
+y="GOOD MORNING";
+}
+else
+{
+y="GOOD AFTERNOON";
+}
+document.getElementById("hexa").innerHTML=y;
+}
+</script>
+</body>
+</html>

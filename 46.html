@@ -1,0 +1,14 @@
+<html>
+<body>
+<button onclick="seed()">CLICK</button>
+<p id="hexa">WELCOME TO MY WEB,THIS IS THE FUNCTION OF MY WEB, WEB IS PERFORMING WELL, WEB IS HAVING FUN</p>
+<script>
+function seed()
+{
+var x=document.getElementById("hexa").innerHTML;
+var y=x.replace(/WEB/g,"CHAT");
+document.getElementById("hexa").innerHTML=y;
+}
+</script>
+</body>
+</html>
