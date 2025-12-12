@@ -1,0 +1,22 @@
+.para{
+    color:blanchedalmond;
+    background-color: brown;
+}
+
+.class1:link{
+    color: rgb(129, 129, 192);
+}
+
+.class2:active{
+    color:green;
+}
+
+.class3:visited{
+    color:red;
+}
+
+.class4:hover{
+    color:cyan;
+   
+}
+

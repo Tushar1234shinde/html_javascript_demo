@@ -1,0 +1,106 @@
+/* 1. Universal Selector */
+* {
+    margin: 5px;
+    padding: 0;
+}
+
+/* 2. Element Selector */
+h1 {
+    color: blue;
+}
+
+/* 3. ID Selector */
+#main-title {
+    text-align: center;
+    font-size: 32px;
+}
+
+/* 4. Class Selector */
+.intro {
+    color: green;
+    font-weight: bold;
+}
+
+/* 5. Group Selector */
+h2, .intro {
+    font-family: Arial;
+}
+
+/* 6. Descendant Selector */
+.container p {
+    color: darkorange;
+}
+
+/* 7. Child Selector */
+.inner > p {
+    color: red;
+    font-style: italic;
+}
+
+/* 8. Adjacent Sibling Selector */
+.first + .second {
+    color: purple;
+    font-weight: bold;
+}
+
+/* 9. General Sibling Selector */
+.first ~ .third {
+    color: brown;
+    text-decoration: underline;
+}
+
+/* 10. Attribute Selector */
+a[target="_blank"] {
+    color: crimson;
+    font-size: 18px;
+}
+
+input[type="text"] {
+    border: 2px solid #333;
+    padding: 5px;
+}
+
+/* 11. Pseudo-Class Selectors */
+.pseudo-link:hover {
+    color: green;
+}
+
+.pseudo-link:active {
+    color: red;
+}
+
+.pseudo-link:visited {
+    color: purple;
+}
+
+.input-field:focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* 12. Pseudo-Element Selectors */
+.before-after::before {
+    content: "🔥 Before | ";
+    color: red;
+}
+.before-after::after {
+    content: " | After 🌟";
+    color: blue;
+}
+
+/* 13. nth-child Selector */
+.list li:nth-child(odd) {
+    background: #f0f0f0;
+}
+.list li:nth-child(even) {
+    background: #d0d0d0;
+}
+
+/* 14. :not Selector */
+p:not(.not-demo) {
+    color: gray;
+}
+.not-demo {
+    color: teal;
+    font-size: 20px;
+}

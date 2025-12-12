@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Anchor (Link) Tag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 8px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>HTML Anchor (Link) Tag Examples</h1>
+
+<!-- BASIC LINK -->
+<div class="box">
+    <h2>1. Basic Link</h2>
+    <a href="https://www.google.com">Visit Google</a>
+</div>
+
+<!-- OPEN IN NEW TAB -->
+<div class="box">
+    <h2>2. Open Link in New Tab</h2>
+    <a href="https://www.youtube.com" target="_blank">Open YouTube</a>
+</div>
+
+<!-- EMAIL LINK -->
+<div class="box">
+    <h2>3. Email Link</h2>
+    <a href="mailto:example@gmail.com">Send Email</a>
+</div>
+
+<!-- PHONE LINK -->
+<div class="box">
+    <h2>4. Phone Link</h2>
+    <a href="tel:+919021644331">Call Now</a>
+</div>
+
+<!-- DOWNLOAD LINK -->
+<div class="box">
+    <h2>5. Download Link</h2>
+    <a href="sample.pdf" download>Download PDF</a>
+</div>
+
+<!-- INTERNAL PAGE LINK (BOOKMARK) -->
+<div class="box">
+    <h2>6. Internal Page Link (Bookmark)</h2>
+    <a href="#section1">Go to Section 1</a>
+    <a href="#section2">Go to Section 2</a>
+
+    <div style="height:400px;"></div>
+
+    <h3 id="section1">Section 1</h3>
+    <p>This is Section 1 content.</p>
+
+    <div style="height:400px;"></div>
+
+    <h3 id="section2">Section 2</h3>
+    <p>This is Section 2 content.</p>
+</div>
+
+<!-- IMAGE AS A LINK -->
+<div class="box">
+    <h2>7. Image as a Link</h2>
+    <a href="https://www.google.com" target="_blank">
+        <img src="https://th.bing.com/th/id/OIP.WmT_HUA0LhDXD49wsmV98wHaFK?w=259&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Google Image Link">
+    </a>
+</div>
+
+<!-- STYLED BUTTON LINK -->
+<div class="box">
+    <h2>8. Link Styled as Button</h2>
+    <a href="https://www.github.com" 
+       style="background:#4CAF50; color:white; padding:10px 20px; border-radius:6px;">
+       Visit GitHub
+    </a>
+</div>
+
+</body>
+</html>

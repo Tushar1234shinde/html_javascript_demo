@@ -1,0 +1,175 @@
+/* ------------------------------ */
+/*          CSS VARIABLES        */
+/* ------------------------------ */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #333;
+    --font-main: Arial, sans-serif;
+    --shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ------------------------------ */
+/*       GLOBAL PROPERTIES       */
+/* ------------------------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------ */
+/*           HEADER              */
+/* ------------------------------ */
+.header {
+    background: linear-gradient(45deg, #4CAF50, #2F8F9D);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ------------------------------ */
+/*       FLEXBOX / GRID          */
+/* ------------------------------ */
+.flex-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 150px;
+    height: 120px;
+    background: #FFF3E4;
+    border: 2px solid #ff9800;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.g-item {
+    background: #DFF6FF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* ------------------------------ */
+/*         TEXT PROPERTIES       */
+/* ------------------------------ */
+.text-demo {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline dotted;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* ------------------------------ */
+/*            BUTTONS            */
+/* ------------------------------ */
+.btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #2E7D32;
+    transform: scale(1.1);
+    box-shadow: var(--shadow);
+}
+
+.outline-btn {
+    background: none;
+    color: var(--secondary-color);
+    padding: 10px 25px;
+    border: 2px solid #222;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.outline-btn:hover {
+    background: #222;
+    color: white;
+}
+
+/* ------------------------------ */
+/*       ANIMATION & TRANSFORM   */
+/* ------------------------------ */
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    margin: 40px auto;
+    animation: moveBox 4s infinite;
+    border-radius: 12px;
+}
+
+@keyframes moveBox {
+    0% { transform: translateX(0) rotate(0); }
+    50% { transform: translateX(150px) rotate(180deg); }
+    100% { transform: translateX(0) rotate(360deg); }
+}
+
+/* ------------------------------ */
+/*        FILTERS & SHADOWS      */
+/* ------------------------------ */
+.filtered-img {
+    filter: grayscale(40%) blur(1px) brightness(1.1);
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+}
+
+/* ------------------------------ */
+/*            FOOTER             */
+/* ------------------------------ */
+.footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* ------------------------------ */
+/*        MEDIA QUERIES          */
+/* ------------------------------ */
+@media (max-width: 768px) {
+    .grid-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .text-demo {
+        font-size: 18px;
+    }
+}

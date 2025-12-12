@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Map Tag and Area Tag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .example-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            background: #fafafa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML <code>&lt;map&gt;</code> Tag and <code>&lt;area&gt;</code> Tag</h1>
+
+    <p>
+        The <code>&lt;map&gt;</code> and <code>&lt;area&gt;</code> tags are used together to create
+        an <b>image map</b>. An image map is an image with clickable areas.
+    </p>
+
+    <h2>1. &lt;map&gt; Tag</h2>
+    <p>
+        The <code>&lt;map&gt;</code> tag defines an image map. It does not display anything itself,
+        but it is linked to an image using the <code>usemap</code> attribute of the
+        <code>&lt;img&gt;</code> tag.
+    </p>
+    <p><b>Important attributes of &lt;map&gt;:</b></p>
+    <ul>
+        <li><code>name</code> – a unique name used to link the map with an image.</li>
+    </ul>
+
+    <h2>2. &lt;area&gt; Tag</h2>
+    <p>
+        The <code>&lt;area&gt;</code> tag defines each clickable area inside the map.
+        It is always written inside the <code>&lt;map&gt;</code> tag.
+    </p>
+    <p><b>Important attributes of &lt;area&gt;:</b></p>
+    <ul>
+        <li><code>shape</code> – shape of the area (rect, circle, poly).</li>
+        <li><code>coords</code> – coordinates of the area (depends on shape).</li>
+        <li><code>href</code> – link to open when area is clicked.</li>
+        <li><code>alt</code> – alternative text (for accessibility).</li>
+        <li><code>title</code> – text shown as tooltip on hover (optional but useful).</li>
+    </ul>
+
+    <h2>3. Simple Image Map Example</h2>
+    <p>
+        In this example, we have an image with two clickable areas:
+    </p>
+    <ul>
+        <li>A rectangular area on the left side that opens Google.</li>
+        <li>A circular area on the right side that opens YouTube.</li>
+    </ul>
+
+    <div class="example-box">
+        <p><b>Output Preview:</b></p>
+        <!-- Example image map (you can replace the image source with your own) -->
+        <img src="https://th.bing.com/th/id/OIP.AynhA-3lMEKaoXWs2oqJEQHaEK?w=321&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Sample Image Map"
+             usemap="#sampleMap">
+
+        <map name="sampleMap">
+            <!-- Rectangle: x1,y1,x2,y2 -->
+            <area shape="rect"
+                  coords="10,10,290,190"
+                  href="https://www.google.com"
+                  alt="Go to Google"
+                  title="Open Google">
+
+            <!-- Circle: centerX,centerY,radius -->
+            <area shape="circle"
+                  coords="450,100,80"
+                  href="https://www.youtube.com"
+                  alt="Go to YouTube"
+                  title="Open YouTube">
+        </map>
+    </div>
+
+    <h2>4. HTML Code for the Example</h2>
+    <p>You can use this code to create your own image map:</p>
+
+    <div class="example-box">
+<pre>
+&lt;img src="https://th.bing.com/th/id/OIP.cjfGiqW-cFpC7vsx1dxFAgHaEK?w=276&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+     alt="Sample Image Map"
+     usemap="#sampleMap"&gt;
+
+&lt;map name="sampleMap"&gt;
+    &lt;!-- Rectangle clickable area --&gt;
+    &lt;area shape="rect"
+          coords="10,10,290,190"
+          href="https://www.google.com"
+          alt="Go to Google"
+          title="Open Google"&gt;
+
+    &lt;!-- Circle clickable area --&gt;
+    &lt;area shape="circle"
+          coords="450,100,80"
+          href="https://www.youtube.com"
+          alt="Go to YouTube"
+          title="Open YouTube"&gt;
+&lt;/map&gt;
+</pre>
+    </div>
+
+    <h2>5. Summary</h2>
+    <ul>
+        <li><code>&lt;map&gt;</code> defines the image map and groups the areas.</li>
+        <li><code>&lt;area&gt;</code> defines each clickable region on the image.</li>
+        <li><code>usemap</code> in <code>&lt;img&gt;</code> connects the image to the map.</li>
+    </ul>
+
+</body>
+</html>

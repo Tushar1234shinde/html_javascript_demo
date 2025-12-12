@@ -1,0 +1,16 @@
+.external-text {
+    color: purple;
+    font-size: 20px;
+}
+
+.external-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+
+.external-btn:hover {
+    background-color: rgb(2, 156, 156);
+}

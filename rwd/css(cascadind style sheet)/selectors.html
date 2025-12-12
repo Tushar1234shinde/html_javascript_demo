@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <link rel="stylesheet" href="selectors.css">
+</head>
+<body>
+
+<h1 id="main-title">CSS Selectors Demo</h1>
+
+<p class="intro">This paragraph uses a class selector.</p>
+
+<div class="container">
+    <p>This is a descendant selector example.</p>
+    <div class="inner">
+        <p>Child selector example inside .inner</p>
+    </div>
+</div>
+
+<h2>Sibling Selectors</h2>
+<p class="first">I am the first paragraph.</p>
+<p class="second">I am the second paragraph (adjacent sibling).</p>
+<p class="third">I am the third paragraph (general sibling).</p>
+
+<h2>Attribute Selectors</h2>
+<a href="https://google.com" target="_blank">Google Link</a>
+<input type="text" placeholder="Type here">
+
+<h2>Pseudo Classes</h2>
+<a href="#" class="pseudo-link">Hover, Active & Visited</a>
+<input type="text" class="input-field" />
+
+<h2>Pseudo Elements</h2>
+<p class="before-after">Pseudo-elements example text.</p>
+
+<h2>nth-child Selectors</h2>
+<ul class="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+
+<h2>:not Selector</h2>
+<p class="not-demo">I will be styled.</p>
+<p>I will NOT be styled.</p>
+
+</body>
+</html>
