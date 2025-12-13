@@ -1,14 +1,18 @@
 <html>
 <body>
-<p id="hexa"></p>
+<button onclick="seed()">CLICK</button>
+<p id="hexa">WELCOME TO WEB, WEB IS LOCATED 
+IN INDIA, WEB IS VERY CHEAP, WEB IS GOOD
+</p>
 <script>
-var x="";
-var y;
-for(y=0;y<10;y++)
+
+function seed()
 {
-x+="GIVEN NO IS "+y+"<br>";
+var x=document.getElementById("hexa").innerHTML;
+var y=x.replace(/WEB/g,"NAGPUR");
+
+document.getElementById("hexa").innerHTML=y;
 }
-document.getElementById("hexa").innerHTML=x;
 </script>
 </body>
 </html>
