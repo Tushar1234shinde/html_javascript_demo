@@ -132,7 +132,7 @@ body {
     height: 100px;
     background: tomato;
     margin: 40px auto;
-    animation: moveBox 4s infinite;
+    animation: moveBox 1s infinite;
     border-radius: 12px;
 }
 

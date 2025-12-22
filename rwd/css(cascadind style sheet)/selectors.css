@@ -90,7 +90,7 @@ input[type="text"] {
 
 /* 13. nth-child Selector */
 .list li:nth-child(odd) {
-    background: #f0f0f0;
+    background: #11000200;
 }
 .list li:nth-child(even) {
     background: #d0d0d0;

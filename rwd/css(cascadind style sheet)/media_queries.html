@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Query Example</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Mobile devices (max width 600px) */
+        @media (max-width: 600px) {
+            body {
+                background-color: lightcoral;
+                font-size: 14px;
+            }
+        }
+
+        /* Tablet devices (601px to 900px) */
+        @media (min-width: 601px) and (max-width: 900px) {
+            body {
+                background-color: lightgreen;
+                font-size: 18px;
+            }
+        }
+
+        /* Desktop devices (above 900px) */
+        @media (min-width: 901px) {
+            body {
+                background-color: lightblue;
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Media Query Demo</h1>
+    <p>Resize the browser window to see changes</p>
+</body>
+</html>

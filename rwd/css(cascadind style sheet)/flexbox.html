@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Complete Flexbox Demo</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* 1. BASIC FLEX */
+.basic-flex {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.basic-flex div {
+    background: steelblue;
+    color: white;
+    padding: 20px;
+}
+
+/* 2. FLEX DIRECTION */
+.direction {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.direction div {
+    background: darkorange;
+    color: white;
+    padding: 15px;
+}
+
+/* 3. JUSTIFY CONTENT */
+.justify {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.justify div {
+    background: crimson;
+    color: white;
+    padding: 20px;
+}
+
+/* 4. ALIGN ITEMS */
+.align {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.align div {
+    background: teal;
+    color: white;
+    padding: 15px;
+}
+
+/* 5. FLEX WRAP */
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.wrap div {
+    background: purple;
+    color: white;
+    width: 150px;
+    padding: 20px;
+}
+
+/* 6. FLEX GROW */
+.grow {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.grow .one { flex: 1; background: green; }
+.grow .two { flex: 2; background: olive; }
+.grow .three { flex: 1; background: darkgreen; }
+
+.grow div {
+    color: white;
+    padding: 20px;
+}
+
+/* 7. ALIGN SELF */
+.self {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.self div {
+    background: navy;
+    color: white;
+    padding: 20px;
+}
+
+.self .special {
+    align-self: flex-start;
+    background: red;
+}
+
+/* 8. RESPONSIVE FLEX */
+.responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.responsive div {
+    background: royalblue;
+    color: white;
+    flex: 1 1 200px;
+    padding: 20px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 600px) {
+    .justify {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h2>1. Basic Flex</h2>
+<div class="basic-flex">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+</div>
+
+<h2>2. Flex Direction (Column)</h2>
+<div class="direction">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</div>
+
+<h2>3. Justify Content</h2>
+<div class="justify">
+    <div>Left</div>
+    <div>Center</div>
+    <div>Right</div>
+</div>
+
+<h2>4. Align Items</h2>
+<div class="align">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+</div>
+
+<h2>5. Flex Wrap</h2>
+<div class="wrap">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+</div>
+
+<h2>6. Flex Grow</h2>
+<div class="grow">
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+</div>
+
+<h2>7. Align Self</h2>
+<div class="self">
+    <div>Normal</div>
+    <div class="special">Special</div>
+    <div>Normal</div>
+</div>
+
+<h2>8. Responsive Flex</h2>
+<div class="responsive">
+    <div>Card 1</div>
+    <div>Card 2</div>
+    <div>Card 3</div>
+    <div>Card 4</div>
+</div>
+
+</body>
+</html>
