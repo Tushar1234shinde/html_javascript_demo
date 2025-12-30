@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("Conditional statement");
+
+        var a = 20
+        var b = 30
+        if (a > b) {
+            document.write("A is greater");
+        }
+        else {
+            document.write("B is greater");
+        }
+
+        // conditional operator - unary operator (? :)
+        (a > b) ? document.write("A is greater") : document.write("b is greater")
+        document.write("<br>")
+        var a = 77;
+        (a % 2 == 0) ? document.write("even") : document.write("odd");
+        document.write("<br>")
+        ans = (15 % 2) == 0 ? "even" : "odd";
+        document.write(ans);
+        // alert(ans);
+        document.write("<br>"); document.write("<hr>");
+
+        a = 2
+        b = 6
+        c = '7'
+        d = "name"
+        e = true
+
+        document.write(a, "<br>", b, "<br>", c, "<br>", d, "<br>", e, "<br>");
+        document.write(typeof (a), "<br>", typeof (b), "<br>", typeof (c), "<br>", typeof (d), "<br>", typeof (e));
+
+        document.write("<hr>")
+        // switch case
+        var choice = 11;
+
+        switch (choice) {
+            case 1:
+                document.write("case 1");
+                break;
+            case 2:
+                document.write("case 2");
+                break;
+            default:
+                document.write("Invalid");
+        }
+        document.write("<hr>")
+        choice =1
+        switch (choice) {
+            case 1:
+                document.write("English");
+               break;
+            case 2:
+                document.write("Marathi");
+                 break;
+            case 3:
+                document.write("hindi");
+                 break;
+            case 4:
+                document.write("Gujrati");
+                 break;
+            default:
+                document.write("Invalid input");
+                 break;
+        }
+        document.write("OUT OF SWITCH")
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
