@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>creating form  </title>
+</head>
+<body bgcolor=pink>
+
+<form name="Student details" method="post" action="successful.html">
+
+<h2> Student Login Form </h2>
+Enter first name :  <input type="text"  name="T1"  size=30  value="" placeholder="abc">  <br>
+
+Enter last name :  <input type="text"  name="T2" size=30 value="xyz">  <br>
+
+Enter password  :  <input type="password" name ="pass" value=""  size=20 required>
+
+<hr color=blue>
+
+Gender  :  <input type="radio" name="gender" value="Male"  > Male   
+                  <input type ="radio" name="gender" value="Female"> Female
+
+<br>
+Stream : <input type="radio" name ="stream" value="science"> Science
+               <input type="radio" name="stream" value="arts"> Arts
+               <input type="radio" name="stream" value="commerce"  checked> Commerce
+
+<br>
+Choose City  :   
+<select> 
+<option>Raipur </option>
+<option>Jabalpur</option>
+<option>Jaipur</option>
+<option>Patna</option>
+<option   >Nagpur</option>
+</select>   
+
+Choose State  : 
+<select>
+<option>Chhatisgarh </option>
+<option>Madhya Pradesh </option>
+<option>Rajasthan</option>
+<option>Bihar</option>
+<option  selected>Maharashtra</option>
+</select> 
+<hr color =blue>
+
+What do you like ?  <br> 
+<input type="checkbox"  name="C1" value="dance" checked> dance
+<input type="checkbox" name="C2"  value ="swimming"> swimming
+<input type="checkbox" name="C3"  value ="reading" checked> reading
+<input type="checkbox" name="C2"  value ="shopping"> shopping
+<input type="checkbox" name="C2"  value ="net surfing"> net surfing
+<input type="checkbox" name="C2"  value ="singing"> singing
+
+<br>
+
+Write about yourself :  <br>
+<textarea  rows="5"  cols="40" name ="info"> </textarea>
+<hr color =blue>
+
+Choose your pic : <input type="file">  <br>
+
+<input type="submit"  value="submit form">
+<input type="reset" value="reset">
+
+</form>
+</body>
+</html>
