@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="event.js"></script>
+</head>
+<body>
+    <button onclick="handleClick()">Click Me</button>
+
+<input type="text"
+       onblur="handleBlur()"
+       onchange="handleChange()"
+       onkeydown="handleKeyDown(event)"
+       onkeypress="handleKeyPress(event)"
+       onkeyup="handleKeyUp(event)">
+
+<form onsubmit="handleSubmit(event)">
+    <button type="submit">Submit</button>
+</form>
+
+<div style="width:200px;height:100px;background:lightblue"
+     onmousedown="handleMouseDown()"
+     onmouseup="handleMouseUp()"
+     onmousemove="handleMouseMove()"
+     onmouseover="handleMouseOver()"
+     onmouseout="handleMouseOut()"
+   >
+</div>
+
+<input type="text" onfocus="handleFocus()" onblur="handleBlur()">
+
+<body onload="handleLoad()" onunload="handleUnload()">
+</body>
+</html>

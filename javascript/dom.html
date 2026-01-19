@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        hr{
+            height: 100%;
+            border: 1px dashed rgb(241, 108, 108);
+            
+
+        }
+    </style>
+    <script>
+        //get element by name
+        display = function() {
+            var name = document.form1.name.value;
+            alert("Name is: " + name);
+        }
+
+        // get element by id
+        function Number(){
+            var num = document.getElementById("number").value;
+            alert("Square of Number is: "+ (num * num));
+        }
+    </script>
+</head>
+<body>
+    <!-- get element by name -->
+    <form name="form1">
+        enter name: <input type="text" name="name">
+        <input type="button" onclick="display()" value="Display Name">
+        <button onclick="display()">Display</button>
+    </form>
+
+    <!-- get element by id -->
+     <hr>
+
+     <form >
+        Enter number:
+        <input type="text" id="number">
+        <button onclick="Number()">Display</button>
+     </form>
+    
+</body>
+</html>
