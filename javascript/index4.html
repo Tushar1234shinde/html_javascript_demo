@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<h3>Enter your choice</h3>");
+        document.write("<br>1.English<br>2.Hindi<br>3.Marathi<br>");
+
+        function my_choice(){
+            var choice=document.getElementById("y_choice").value;
+            switch(choice){
+                case '1':
+                    document.write("<br>You have selected English");
+                    break;
+                case '2':
+                    document.write("<br>You have selected Hindi");
+                    break;
+                case '3':
+                    document.write("<br>You have selected Marathi");
+                    break;
+                default:
+                    document.write("<br>Invalid Choice");
+            }
+            document.write("<br>out of the switch block");
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="number" id="y_choice">
+        <button onclick="my_choice()">Submit</button>
+    </form>
+</body>
+</html>

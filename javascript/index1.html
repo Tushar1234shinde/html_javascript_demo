@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myname() {
+
+            alert("Hello! I am an alert box!!");
+        }
+
+        function myclass() {
+            alert("Hello! I am an alert box for class!!");
+        }
+
+        function myid() {
+            alert("Hello! I am an alert box for id!!");
+        }
+    </script>
+
+</head>
+<body>
+    <form action="index.html" target="_blank">
+        <input type="text" name="sample1">
+        <button onclick="myname()">Button</button>
+    </form>
+
+    <form action="index.html" target="_blank">
+        <input type="text" class="cl1">
+        <button onclick="myclass()">Button</button>
+    </form>
+
+    <form action="index.html" target="_blank">
+        <input type="text" id="id1">
+        <button onclick="myid()">Button</button>
+    </form>
+
+   
+</body>
+</html>

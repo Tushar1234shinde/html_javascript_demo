@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // get element by name
+        function showName() {
+            var name = document.form1.txt1.value;
+            alert("The entered name is: " + name);
+        }
+
+        //get element by id
+        function showPhone_num(){
+            var phone_num= document.getElementById("id1").value;
+            alert("The entered phone number is: "+phone_num);
+        }
+
+        //get element by class name
+        function show_subject(){
+            var subject_name=document.getElementsByClassName("cls1");
+            alert("The entered subject is: "+subject_name[0].value);
+        }
+
+        //get element by tag name
+        function para1(){
+            var p_tags=document.getElementsByTagName("p");
+            alert("The first paragraph is: "+p_tags[1].innerHTML);
+        }
+
+        function display(){
+            var para=document.getElementById("para").innerHTML;
+            document.getElementById("data").innerHTML=para;
+        }
+    </script>
+</head>
+<body>
+    <!-- get element by Name -->
+    <form name="form1">
+        Enter name: <input type="text" name="txt1"><br><br>
+        <button type="button" onclick="showName()">Show Name</button>
+    </form>
+
+    <!-- get element by id -->
+    <form >
+        Enter phone number: <input type="text" id="id1"><br><br>
+        <button onclick="showPhone_num()">Show Phone</button>
+    </form>
+
+    <!-- get element by classname -->
+    <form >
+        Enter subject: <input type="text" class="cls1"><br><br>
+       <input type="button" onclick="show_subject()" value="Click me">
+    </form>
+
+    <!-- get element by tag name -->
+
+    <p>This is para1</p>
+    <p>This is para2</p>
+    <p>This is para3</p>
+    <button onclick="para1()">Click me to see paragraph</button>
+
+    <p id="para">THIS IS LAST PRAGRAPH TO BE DESPLAYED IN H1 TAG</p>
+    <button onclick="display()">Click me to see paragraph</button>
+    <h1 id="data"></h1>
+</body>
+</html>

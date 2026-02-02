@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myname() {
+            var temp1 =document.getElementsByName("sample1")[0].value;
+            alert("Name is: " +temp1);
+             alert("Hello! I am an alert box by name !!");
+        }
+
+        function myclass() {
+            var temp2 =document.getElementsByClassName("cl1")[0].value;
+            alert("Father name is: " +temp2);
+            alert("Hello! I am an alert box for class!!");
+        }
+
+        function myid() {
+            var temp3 =document.getElementById("id1").value;
+            alert("Last name is: " +temp3);
+            alert("Hello! I am an alert box for id!!");
+        }
+    </script>
+
+</head>
+<body>
+    <form target="_blank">
+        Enter First Name:
+        <input type="text" name="sample1">
+        <button onclick="myname()">Button</button>
+    </form>
+
+    <form target="_blank">
+       Enter Middle Name:
+        <input type="text" class="cl1">
+        <button onclick="myclass()">Button</button>
+    </form>
+
+    <form target="_blank">
+         Enter Last Name:
+        <input type="text" id="id1">
+        <button onclick="myid()">Button</button>
+    </form>
+
+   
+</body>
+</html>

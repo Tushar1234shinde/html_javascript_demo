@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="function.js"></script>
-</head>
-<body>
+    <title>Function</title>
+    <script>
+        var i, j;
+        function right_angle_triangle_row_wise_increment() {
+            for (i = 1; i <= 5; i++) {
+                for (j = 1; j <= i; j++) {
+                    document.write(" " + i);
+                }
+                document.write("<br>");
+            }
+        }
+        document.write("<br>");
+        function right_angle_triangle_col_wise_increment() {
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(" " + j);
+            }
+            document.write("<br>");
+        }}
+        document.write("<br>");
+
+right_angle_triangle_col_wise_increment();
+right_angle_triangle_row_wise_increment();
+var a=5;
+    var b=7;
+function addition(x,y){
     
+    var c=x+y;
+    document.write("The sum is: "+c);
+}
+
+addition(a,b);
+
+for(a=1;a<=10;a++){
+    if(a==8){
+        break;
+    }
+    if(a==2){
+        continue;
+    }
+    document.write("<br>",a);
+}
+
+var a= eval("10*5*2");
+document.write(a);
+
+var b=parseInt("100.567");
+document.write("<br>"+b);
+var c=parseInt("10abc25");
+document.write("<br>"+c);
+
+var b=parseFloat("100.567");
+document.write("<br>"+b);
+var c=parseFloat("10.788abc25");
+document.write("<br>"+c);
+
+var c=alert("hello world");
+document.write(c);
+
+var a=prompt("Enter your name:");
+document.write("Welcome "+a+" to JavaScript programming!");
+
+var b=confirm("Are you sure you want to proceed?");
+document.write("<br>User response: "+b);
+
+
+
+
+    </script>
+</head>
+
+<body>
+
 </body>
+
 </html>
